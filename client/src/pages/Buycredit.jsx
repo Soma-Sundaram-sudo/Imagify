@@ -20,7 +20,7 @@ const Buycredit = () => {
     receipt : order.receipt,
     handler:async(response) => {
       try {
-        const {data} = await axios.post("http://localhost:4000/api/user/verify-razor",response,{headers:{token}})
+        const {data} = await axios.post("https://imagify-ng4d.onrender.com/api/user/verify-razor",response,{headers:{token}})
         if (data.success){
           loadCreditsData()
           navigate("/")
