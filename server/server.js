@@ -1,5 +1,5 @@
 import express from "express"
-const cors=require('cors')
+import cors from 'cors'
 import "dotenv/config"
 import connectDB from "./config/mongodb.js"
 import userRouter from "./routes/userRoutes.js"
